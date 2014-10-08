@@ -749,9 +749,9 @@ void setup()
 #ifdef __LCD
   /* initialisation LCD */
   Wire.begin();
-  delay(10); // on laisse un peu de temps pour l'initialisation
+  delay(100); // on laisse un peu de temps pour l'initialisation
   myLCD->begin(16,2);
-  delay(10); // on laisse un peu de temps pour l'initialisation
+  delay(100); // on laisse un peu de temps pour l'initialisation
   myLCD->clear();
   myLCD->backlight();
   myLCD->setCursor(2,0);
