@@ -444,6 +444,12 @@ int main(int argc, char *argv[])
         command = (char *)malloc(strlen(optarg)+1);
         if(command)
            strcpy(command,optarg);
+        else
+        {
+           fprintf(stderr,"ERROR : %s - internal error.\n",argv[0]);
+           perror("");
+           exit(1);
+        }
         break;
            
       case 'i':
